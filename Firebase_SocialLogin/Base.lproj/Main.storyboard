@@ -1,26 +1,110 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Firebase_SocialLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="voU-RY-Rvx">
+            <objects>
+                <viewController id="5zc-MY-uZQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tgU-m3-2np"/>
+                        <viewControllerLayoutGuide type="bottom" id="ohW-iS-gmR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dul-iQ-hvo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61l-2T-Qhe">
+                                <rect key="frame" x="20" y="50" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hib-sT-TaY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AN-6H-f6V">
+                                <rect key="frame" x="20" y="130" width="280" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aFC-Hs-BXi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bys-3z-uPS">
+                                <rect key="frame" x="20" y="210" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="FDM-tS-fQn"/>
+                                    <constraint firstAttribute="height" constant="50" id="KOT-3a-08o"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDI-Q1-cjx">
+                                <rect key="frame" x="20" y="290" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="QWz-N4-FrS"/>
+                                    <constraint firstAttribute="height" constant="50" id="kRh-J3-JyL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZZ-tU-8cN">
+                                <rect key="frame" x="20" y="370" width="280" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Ht-TA-f5g"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jMN-1W-ZwD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1AN-6H-f6V" secondAttribute="trailing" constant="20" id="2bz-T3-BeM"/>
+                            <constraint firstItem="1AN-6H-f6V" firstAttribute="leading" secondItem="Dul-iQ-hvo" secondAttribute="leading" constant="20" id="5CA-aQ-eqH"/>
+                            <constraint firstItem="61l-2T-Qhe" firstAttribute="top" secondItem="tgU-m3-2np" secondAttribute="bottom" constant="30" id="6xC-Oy-lVs"/>
+                            <constraint firstItem="1AN-6H-f6V" firstAttribute="top" secondItem="61l-2T-Qhe" secondAttribute="bottom" constant="30" id="7qA-mw-aJr"/>
+                            <constraint firstItem="Bys-3z-uPS" firstAttribute="top" secondItem="1AN-6H-f6V" secondAttribute="bottom" constant="30" id="8Iq-w0-hKz"/>
+                            <constraint firstAttribute="trailing" secondItem="Bys-3z-uPS" secondAttribute="trailing" constant="20" id="8y9-nu-PGT"/>
+                            <constraint firstItem="nDI-Q1-cjx" firstAttribute="leading" secondItem="Dul-iQ-hvo" secondAttribute="leading" constant="20" id="Ofg-rn-oRk"/>
+                            <constraint firstItem="sZZ-tU-8cN" firstAttribute="top" secondItem="nDI-Q1-cjx" secondAttribute="bottom" constant="30" id="SI4-Lc-o6i"/>
+                            <constraint firstAttribute="trailing" secondItem="61l-2T-Qhe" secondAttribute="trailing" constant="20" id="h5h-CI-4RL"/>
+                            <constraint firstItem="Bys-3z-uPS" firstAttribute="leading" secondItem="Dul-iQ-hvo" secondAttribute="leading" constant="20" id="hkC-Fm-AdP"/>
+                            <constraint firstAttribute="trailing" secondItem="nDI-Q1-cjx" secondAttribute="trailing" constant="20" id="j6K-Fb-dYO"/>
+                            <constraint firstItem="nDI-Q1-cjx" firstAttribute="top" secondItem="Bys-3z-uPS" secondAttribute="bottom" constant="30" id="jFB-Mx-PDf"/>
+                            <constraint firstItem="61l-2T-Qhe" firstAttribute="leading" secondItem="Dul-iQ-hvo" secondAttribute="leading" constant="20" id="upp-A4-yhP"/>
+                            <constraint firstAttribute="trailing" secondItem="sZZ-tU-8cN" secondAttribute="trailing" constant="20" id="vWi-ag-xTJ"/>
+                            <constraint firstItem="sZZ-tU-8cN" firstAttribute="leading" secondItem="Dul-iQ-hvo" secondAttribute="leading" constant="20" id="y8Z-Vx-vDn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEf-Zt-JXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209.375" y="101.25"/>
         </scene>
     </scenes>
 </document>
